@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			p {
+				font-family: "微软雅黑";
+				font-size: 14px;
+			}
+			
+			.bb {
+				height: 32px;
+				background-color: #f1ee18;
+				/*所有识别*/
+				background-color: #00deff\9;
+				/*IE6、7、8识别*/
+				+background-color: #a200ff;
+				/*IE6、7识别*/
+				_background-color: #1e0bd1;
+				/*IE6识别*/
+			}
+			
+			@media screen and (-webkit-min-device-pixel-ratio:0) {
+				.bb {
+					background-color: #f1ee18
+				}
+			}
+			
+			{}
+			/*safari(Chrome) 有效 */
+			
+			.bb,
+			x:-moz-any-link,
+			x:default {
+				background-color: #00ff00;
+			}
+			/*IE7 firefox3.5及以下 识别 */
+			
+			@-moz-document url-prefix() {
+				.bb {
+					background-color: #00ff00;
+				}
+			}
+			/*仅firefox 识别*/
+			
+			*+html .bb {
+				background-color: #a200ff;
+			}
+			/* 仅IE7 识别 */
+		</style>
+	</head>
+
+	<body>
+		<div>
+			适用范围：IE:6.0,IE7.0,IE8.0,Firefox,Safari(Chrome)之间的兼容<br />
+			实例说明：
+			<br />
+			<p>
+				我们现在将再次对我们的CSS进行加强了，使其能识别Safari(Chrome)游览器。这是基于它们的内核webkit来识别的，用法为@media screen and (-webkit-min-device-pixel-ratio:0)
+			</p>
+		</div>
+
+		<p>一个用于展示的class为bb的div标签</p>
+		<div class="bb"></ div>
+	</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div { position: relative; } 
+			p { position: absolute; } 
+			.a { background: #f00; z-index: 10; } 
+			#b { background: #0ff; z-index: 3; }
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var b = document.getElementById("b");
+				//必须要用获取ID的形式来获取元素，便能需改ZIndex值
+				//若用类名来获取元素来需改ZIndex便会报错
+//				var b = document.getElementsByClassName("b")
+				b.style.zIndex = 100;
+			}
+		</script>
+	</head>
+
+	<body>
+		
+
+		<div class="test">
+			<p class="a">aaaaaaaaaaaaa</p>
+		</div>
+		<div class="test2">
+			<p id="b" class="b">bbbbbbbbbbbbbbbb</p>
+		</div>
+	</body>
+
+</html>

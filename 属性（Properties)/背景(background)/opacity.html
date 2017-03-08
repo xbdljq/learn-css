@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.div1 {
+				width: 200px;
+				height: 200px;
+				background-color: #000000;
+				/*兼容IE*/
+				filter: alpha(opacity=50);
+				filter: alpha(opacity=50);  /* IE 4-7 */ 
+				zoom: 1;
+				   
+				-moz-opacity: 0.5;
+				-khtml-opacity: 0.5;
+				opacity: 0.5;
+			}
+			.div2{
+				/*background-color: #ffffff;*/
+				position: relative;
+				color: blue;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--但如果让DIV背景半透明，而DIV中的文字不半透明呢？很简单，只要在文字的容器中加个position:relative就可以了。-->
+		<div class="div1">
+			<div class="div2">
+				kasjdkahfahsdjk
+			</div>
+		</div>
+		<div style="color: blue;"> jkahsdkah</div>
+
+	</body>
+
+</html>

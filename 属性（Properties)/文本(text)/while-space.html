@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>white-space_CSS参考手册_web前端开发参考手册系列</title>
+		<meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com, www.doyoe.com" />
+		<style>
+			.test p {
+				width: 200px;
+				border: 1px solid #000;
+			}
+			
+			.normal p {
+				word-wrap: normal;
+			}
+			
+			.pre p {
+				white-space: pre;
+			}
+			
+			.pre-wrap p {
+				white-space: pre-wrap;
+			}
+			
+			.pre-line p {
+				white-space: pre-line;
+			}
+			
+			.nowrap p {
+				white-space: nowrap;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul class="test">
+			<li class="normal">
+				<strong>normal：</strong>
+				<p>默认处理方式默认处理方式默认处理方式默认处理方式
+				</p>
+			</li>
+			<li class="pre">
+				<strong>pre：</strong>
+				<p>用等宽字体显示预先格式化的文本，不合并文字间的空白距离，当文字超出边界时不换行
+				</p>
+			</li>
+			<li class="pre-wrap">
+				<strong>pre-wrap：</strong>
+				<p>用等宽字体显示预先格式化的文本，不合并文字间的空白距离，当文字碰到边界时发生换行。
+				</p>
+			</li>
+			<li class="pre-line">
+				<strong>pre-line</strong>
+				<p>保持文本的换行，不保留文字间的空白距离，当文字碰到边界时发生换行。
+				</p>
+			</li>
+			<li class="nowrap">
+				<strong>nowrap：</strong>
+				<p>强制在同一行内显示所有文本，合并文本间的多余空白，直到文本结束或者遭遇br对象。
+				</p>
+			</li>
+		</ul>
+	</body>
+
+</html>

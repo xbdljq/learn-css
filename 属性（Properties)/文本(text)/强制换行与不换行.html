@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				border: 1px solid red;
+				margin: 10px;
+				padding: 5px;
+				width: 100px;
+			}
+			/*强制换行*/
+			
+			.noline {
+				word-wrap: break-word;
+				word-break: break-all;
+			}
+			/*不换行，以省略号结束*/
+			
+			.line {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				word-break: keep-all;
+				font-family: "微软雅黑";
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="noline">
+			qd卡大口径看你自己才能几次啊奇偶i1jzkdjci11221
+		</div>
+		<div class="line">
+			qd卡大口径看你自己才能几次啊奇偶i1jzkdjci11221
+		</div>
+	</body>
+
+</html>

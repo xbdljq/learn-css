@@ -3,7 +3,7 @@
 
 
 
-最低IE兼容的各种css属性
+# 最低IE兼容的各种css属性
 
 最低可兼容ie7的属性		
 positin：fixed

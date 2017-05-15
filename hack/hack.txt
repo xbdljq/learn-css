@@ -1,4 +1,4 @@
-part2 —— CSS hack技巧大全
+#part2 —— CSS hack技巧大全
 
 原文链接：http://www.duitang.com/static/csshack.html
 点击链接查看各游览器常用兼容标记一览表
@@ -16,3 +16,5 @@ IE:6.0+，FireFox:2.0+，Opera 10.0+，Sarari 3.0+，Chrome
 如果这同一个样式在不同大括号里定义，其中一个加important 则important发挥正常作用，
 例：
 div{background:red!important} div{background:green}，这时所有浏览器统一解释为背景色red。）
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style>
+		.box {
+			margin-bottom: 20px;
+			border: 1px solid red;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+		}
+		.box1{
+			-webkit-flex-direction:row;
+			-ms-flex-direction:row;
+			flex-direction:row;
+		}
+		.box2{
+			-webkit-flex-direction:row-reverse;
+			-ms-flex-direction:row-reverse;
+			flex-direction:row-reverse;
+		}
+		.box3{
+			-webkit-flex-direction:column;
+			-ms-flex-direction:column;
+			flex-direction:column;
+		}
+		.box4{
+			-webkit-flex-direction:column-reverse;
+			-ms-flex-direction:column-reverse;
+			flex-direction:column-reverse;
+		}
+		
+		.div1 {
+			width: 100px;
+			height: 80px;
+			background-color: palegoldenrod;
+		}
+		
+		.div2 {
+			width: 50px;
+			height: 60px;
+			background-color: palegreen;
+		}
+		
+		.div3 {
+			width: 150px;
+			height: 80px;
+			background-color: paleturquoise;
+		}
+		
+		.div4 {
+			width: 100px;
+			height: 100px;
+			background-color: palevioletred;
+		}
+	</style>
+
+	<body>
+		<!--
+			flex-direction 顺序指定了弹性子元素在父容器中的位置
+			flex-direction: row | row-reverse | column | column-reverse
+			
+			row：横向从左到右排列（左对齐），默认的排列方式。
+			row-reverse：反转横向排列（右对齐，从后往前排，最后一项排在最前面。
+			column：纵向排列。
+			column-reverse：反转纵向排列，从后往前排，最后一项排在最上面。
+		-->
+		<div class="box box1">
+			<div class="div1">111111111</div>
+			<div class="div2">222222222</div>
+			<div class="div3">3333333333</div>
+			<div class="div4">4444444444</div>
+		</div>
+		<div class="box box2">
+			<div class="div1">111111111</div>
+			<div class="div2">222222222</div>
+			<div class="div3">3333333333</div>
+			<div class="div4">4444444444</div>
+		</div>
+		<div class="box box3">
+			<div class="div1">111111111</div>
+			<div class="div2">222222222</div>
+			<div class="div3">3333333333</div>
+			<div class="div4">4444444444</div>
+		</div>
+		<div class="box box4">
+			<div class="div1">111111111</div>
+			<div class="div2">222222222</div>
+			<div class="div3">3333333333</div>
+			<div class="div4">4444444444</div>
+		</div>
+
+	</body>
+
+</html>

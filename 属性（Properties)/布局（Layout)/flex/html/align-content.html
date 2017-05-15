@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style>
+		.box {
+			margin-bottom: 20px;
+			border: 1px solid red;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+		}
+		.box1{
+			-webkit-align-content: flex-start;
+			align-content: flex-start;
+		}
+		.box2{
+			-webkit-align-content: flex-end;
+			align-content: flex-end;
+		}
+		.box3{
+			-webkit-align-content: center;
+			align-content: center;
+		}
+		.box4{
+			-webkit-align-content: flex-start;
+			align-content: flex-start;
+		}
+		.box5{
+			-webkit-align-content: flex-start;
+			align-content: flex-start;
+		}
+		
+		.div1 {
+			width: 80px;
+			height: 60px;
+			background-color: palegoldenrod;
+		}
+		
+		.div2 {
+			width: 50px;
+			height: 50px;
+			background-color: palegreen;
+		}
+		
+		.div3 {
+			width: 120px;
+			height: 70px;
+			background-color: paleturquoise;
+		}
+		
+		.div4 {
+			width: 70px;
+			height: 50px;
+			background-color: palevioletred;
+		}
+	</style>
+
+	<body>
+		<!--
+			align-content 属性用于修改 flex-wrap 属性的行为。类似于 align-items, 但它不是设置弹性子元素的对齐，而是设置各个行的对齐。
+			align-content: flex-start | flex-end | center | space-between | space-around | stretch
+			
+			stretch - 默认。各行将会伸展以占用剩余的空间。
+			flex-start - 各行向弹性盒容器的起始位置堆叠。
+			flex-end - 各行向弹性盒容器的结束位置堆叠。
+			center -各行向弹性盒容器的中间位置堆叠。
+			space-between -各行在弹性盒容器中平均分布。
+			space-around - 各行在弹性盒容器中平均分布，两端保留子元素与子元素之间间距大小的一半。
+		-->
+		<div class="box box1">
+			<div class="div1">11111</div>
+			<div class="div2">2222</div>
+			<div class="div3">33333</div>
+			<div class="div4">44444</div>
+		</div>
+		<div class="box box2">
+			<div class="div1">1111</div>
+			<div class="div2">2222</div>
+			<div class="div3">33333</div>
+			<div class="div4">4444</div>
+		</div>
+		<div class="box box3">
+			<div class="div1">11111</div>
+			<div class="div2">222</div>
+			<div class="div3">333333</div>
+			<div class="div4">44444</div>
+		</div>
+		<div class="box box4">
+			<div class="div1">111</div>
+			<div class="div2">22222</div>
+			<div class="div3">3333333</div>
+			<div class="div4">444444</div>
+		</div>
+		<div class="box box5">
+			<div class="div1">111</div>
+			<div class="div2">22222</div>
+			<div class="div3">3333333</div>
+			<div class="div4">444444</div>
+		</div>
+
+	</body>
+
+</html>
